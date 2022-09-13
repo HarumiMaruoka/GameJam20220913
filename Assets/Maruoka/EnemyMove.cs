@@ -40,7 +40,8 @@ public class EnemyMove : MonoBehaviour
     {
         if (_playerPos != null)
         {
-            // プレイヤーに向かう方向ベクトルを取得し、移動するための速度を与える。
+            // プレイヤーに向かう方向ベクトルを取得し、
+            // 移動するための速度を与える。
             _rb2D.velocity = (_playerPos.position - transform.position).normalized * _moveSpeed;
         }
     }

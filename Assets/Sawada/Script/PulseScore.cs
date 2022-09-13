@@ -16,10 +16,11 @@ public class PulseScore : MonoBehaviour
     void Start()
     {
         _scoreText = GetComponent<Text>();
+        PlusScore(ScoreManager._score);
     }
 
 
-    public void PluseScore(int score)
+    public void PlusScore(int score)
     {
         int tempScore = _score;
         _score = Mathf.Min(_score + score, _maxScore);

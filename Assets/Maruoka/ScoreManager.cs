@@ -12,7 +12,7 @@ public class ScoreManager : MonoBehaviour
     /// <summary>
     /// スコアをリセットする。
     /// </summary>
-    public void ResetScore()
+    static public void ResetScore()
     {
         _score = 0;
     }

@@ -13,6 +13,13 @@ public class AttackTheEnemy : MonoBehaviour, IPointerClickHandler
     [Header("撃破時に加算するスコア量"), SerializeField]
     int _score = 10;
 
+    AudioSource _shotSE = default;
+
+    private void Start()
+    {
+        _shotSE = GameObject.FindGameObjectWithTag("SE").GetComponent<AudioSource>();
+    }
+
     /// <summary>
     /// このメソッドはhierarchyにイベントシステムが必要。<br/>
     /// かつ、カメラにPhisics 2D RayCast をアタッチする必要がある。<br/>
@@ -23,7 +30,7 @@ public class AttackTheEnemy : MonoBehaviour, IPointerClickHandler
     void IPointerClickHandler.OnPointerClick(UnityEngine.EventSystems.PointerEventData eventData)
     {
         _life--;
-
+        _shotSE.Play();
         if (_life < 1)
         {
             Destroy(this.gameObject);
