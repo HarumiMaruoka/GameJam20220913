@@ -21,13 +21,13 @@ public class EnemyGenerator : MonoBehaviour
         if (_isGenerate)
         {
             _isGenerate = false;
-            GenerateEnemy();
+            StartCoroutine(GenerateEnemy());
         }
     }
 
     IEnumerator GenerateEnemy()
     {
-        Instantiate(_enemyPrefab);
+        Instantiate(_enemyPrefab,transform.position,Quaternion.identity);
         // インターバルを待って敵を生成する。
         yield return new WaitForSeconds(Random.Range(_randomValue._minValue, _randomValue._maxValue));
         _isGenerate = true;
