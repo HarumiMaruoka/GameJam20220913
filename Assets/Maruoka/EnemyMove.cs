@@ -1,17 +1,17 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// “G‚ÌˆÚ“®‚ğ§Œä‚·‚éƒRƒ“ƒ|[ƒlƒ“ƒg
+/// æ•µã®ç§»å‹•ã‚’åˆ¶å¾¡ã™ã‚‹ã‚³ãƒ³ãƒãƒ¼ãƒãƒ³ãƒˆ
 /// </summary>
 [RequireComponent(typeof(Rigidbody2D))]
 public class EnemyMove : MonoBehaviour
 {
-    [Header("ˆÚ“®‘¬“x"), SerializeField]
+    [Header("ç§»å‹•é€Ÿåº¦"), SerializeField]
     float _moveSpeed = 1f;
 
-    [Header("ƒvƒŒƒCƒ„[‚Ìƒ^ƒO"), SerializeField]
+    [Header("ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã®ã‚¿ã‚°"), SerializeField]
     string _playerTagName = "Player";
 
     Transform _playerPos = default;
@@ -23,7 +23,7 @@ public class EnemyMove : MonoBehaviour
         _playerPos = GameObject.FindGameObjectWithTag(_playerTagName).transform;
         if (_playerPos == null)
         {
-            Debug.LogError("ƒvƒŒƒCƒ„[‚Ìæ“¾‚É¸”s‚µ‚Ü‚µ‚½B");
+            Debug.LogError("ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã®å–å¾—ã«å¤±æ•—ã—ã¾ã—ãŸã€‚");
         }
         _rb2D = GetComponent<Rigidbody2D>();
     }
@@ -34,13 +34,16 @@ public class EnemyMove : MonoBehaviour
     }
 
     /// <summary>
-    /// ƒvƒŒƒCƒ„[‚ÉŒü‚©‚Á‚ÄˆÚ“®‚·‚éB
+    /// ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã«å‘ã‹ã£ã¦ç§»å‹•ã™ã‚‹ã€‚
     /// </summary>
     private void Move()
     {
-        // ƒvƒŒƒCƒ„[‚ÉŒü‚©‚¤•ûŒüƒxƒNƒgƒ‹‚ğæ“¾
-        var targetVector = (_playerPos.position - transform.position).normalized;
-        // ˆÚ“®‚·‚é‚½‚ß‚Ì‘¬“x‚ğ—^‚¦‚éB
-        _rb2D.velocity = targetVector * _moveSpeed;
+        if (_playerPos != null)
+        {
+            // ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã«å‘ã‹ã†æ–¹å‘ãƒ™ã‚¯ãƒˆãƒ«ã‚’å–å¾—
+            var targetVector = (_playerPos.position - transform.position).normalized;
+            // ç§»å‹•ã™ã‚‹ãŸã‚ã®é€Ÿåº¦ã‚’ä¸ãˆã‚‹ã€‚
+            _rb2D.velocity = targetVector * _moveSpeed;
+        }
     }
 }
