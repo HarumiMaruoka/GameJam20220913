@@ -1,16 +1,16 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// ƒXƒRƒAŠÇ—Ò
+/// ã‚¹ã‚³ã‚¢ç®¡ç†è€…
 /// </summary>
 public class ScoreManager : MonoBehaviour
 {
     static public int _score = 0;
 
     /// <summary>
-    /// ƒXƒRƒA‚ğƒŠƒZƒbƒg‚·‚éB
+    /// ã‚¹ã‚³ã‚¢ã‚’ãƒªã‚»ãƒƒãƒˆã™ã‚‹ã€‚
     /// </summary>
     public void ResetScore()
     {

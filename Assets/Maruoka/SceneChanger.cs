@@ -1,10 +1,10 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 /// <summary>
-/// ƒV[ƒ“‚ğ•Ï‚¦‚é‹@”\
+/// ã‚·ãƒ¼ãƒ³ã‚’å¤‰ãˆã‚‹æ©Ÿèƒ½
 /// </summary>
 public class SceneChanger : MonoBehaviour
 {
