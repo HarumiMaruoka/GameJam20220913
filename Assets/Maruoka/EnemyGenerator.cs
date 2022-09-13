@@ -27,7 +27,9 @@ public class EnemyGenerator : MonoBehaviour
 
     IEnumerator GenerateEnemy()
     {
-        Instantiate(_enemyPrefab,transform.position,Quaternion.identity);
+        var pos = transform.position;
+        pos.z = 0f;
+        Instantiate(_enemyPrefab, pos, Quaternion.identity);
         // インターバルを待って敵を生成する。
         yield return new WaitForSeconds(Random.Range(_randomValue._minValue, _randomValue._maxValue));
         _isGenerate = true;

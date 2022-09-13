@@ -38,11 +38,13 @@ public class EnemyMove : MonoBehaviour
     /// </summary>
     private void Move()
     {
+        var targetVector = _playerPos.position - transform.position;
         if (_playerPos != null)
         {
             // プレイヤーに向かう方向ベクトルを取得し、
+            //var targetVector = _playerPos.position - transform.position;
             // 移動するための速度を与える。
-            _rb2D.velocity = (_playerPos.position - transform.position).normalized * _moveSpeed;
+            _rb2D.velocity = targetVector.normalized * _moveSpeed;
         }
     }
 }

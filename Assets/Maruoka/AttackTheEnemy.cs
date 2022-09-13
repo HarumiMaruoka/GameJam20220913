@@ -15,8 +15,11 @@ public class AttackTheEnemy : MonoBehaviour, IPointerClickHandler
 
     AudioSource _shotSE = default;
 
+    Object _destroyEffect = default;
+
     private void Start()
     {
+        _destroyEffect = Resources.Load("DestroyEffect2");
         _shotSE = GameObject.FindGameObjectWithTag("SE").GetComponent<AudioSource>();
     }
 
@@ -34,6 +37,7 @@ public class AttackTheEnemy : MonoBehaviour, IPointerClickHandler
         if (_life < 1)
         {
             Destroy(this.gameObject);
+            Instantiate(_destroyEffect, transform.position, Quaternion.identity);
             ScoreManager._score += _score;
         }
     }

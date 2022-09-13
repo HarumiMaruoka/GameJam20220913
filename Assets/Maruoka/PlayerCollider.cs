@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 /// <summary>
 /// プレイヤーの接触系の処理
@@ -25,7 +26,8 @@ public class PlayerCollider : MonoBehaviour
                 _life--;
                 if (_life < 1)
                 {
-                    Destroy(gameObject);
+                    SceneChanger._beforeSceneName = SceneManager.GetActiveScene().name;
+                    SceneManager.LoadScene("ResultScene");
                 }
                 StartCoroutine(GodModeInterval());
             }

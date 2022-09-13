@@ -890,11 +890,11 @@ PrefabInstance:
       objectReference: {fileID: 5808682062807231148, guid: 544d12a50f8093844a011adb860b0dec, type: 3}
     - target: {fileID: 4040156195985582111, guid: 399b6d140d37c9247b3afe0ad22e3472, type: 3}
       propertyPath: _randomValue._maxValue
-      value: 9
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4040156195985582111, guid: 399b6d140d37c9247b3afe0ad22e3472, type: 3}
       propertyPath: _randomValue._minValue
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4290603832446701626, guid: 399b6d140d37c9247b3afe0ad22e3472, type: 3}
       propertyPath: m_Icon
@@ -1221,11 +1221,11 @@ PrefabInstance:
       objectReference: {fileID: 5808682062807231148, guid: 544d12a50f8093844a011adb860b0dec, type: 3}
     - target: {fileID: 4040156195985582111, guid: 399b6d140d37c9247b3afe0ad22e3472, type: 3}
       propertyPath: _randomValue._maxValue
-      value: 9
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4040156195985582111, guid: 399b6d140d37c9247b3afe0ad22e3472, type: 3}
       propertyPath: _randomValue._minValue
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4290603832446701626, guid: 399b6d140d37c9247b3afe0ad22e3472, type: 3}
       propertyPath: m_Name
@@ -1840,11 +1840,11 @@ PrefabInstance:
       objectReference: {fileID: 5808682062807231148, guid: 544d12a50f8093844a011adb860b0dec, type: 3}
     - target: {fileID: 4040156195985582111, guid: 399b6d140d37c9247b3afe0ad22e3472, type: 3}
       propertyPath: _randomValue._maxValue
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4040156195985582111, guid: 399b6d140d37c9247b3afe0ad22e3472, type: 3}
       propertyPath: _randomValue._minValue
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4290603832446701626, guid: 399b6d140d37c9247b3afe0ad22e3472, type: 3}
       propertyPath: m_Icon
@@ -2516,11 +2516,11 @@ PrefabInstance:
       objectReference: {fileID: 5808682062807231148, guid: 544d12a50f8093844a011adb860b0dec, type: 3}
     - target: {fileID: 4040156195985582111, guid: 399b6d140d37c9247b3afe0ad22e3472, type: 3}
       propertyPath: _randomValue._maxValue
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4040156195985582111, guid: 399b6d140d37c9247b3afe0ad22e3472, type: 3}
       propertyPath: _randomValue._minValue
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4290603832446701626, guid: 399b6d140d37c9247b3afe0ad22e3472, type: 3}
       propertyPath: m_Icon
@@ -2593,11 +2593,11 @@ PrefabInstance:
       objectReference: {fileID: 5808682062807231148, guid: 544d12a50f8093844a011adb860b0dec, type: 3}
     - target: {fileID: 4040156195985582111, guid: 399b6d140d37c9247b3afe0ad22e3472, type: 3}
       propertyPath: _randomValue._maxValue
-      value: 9
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4040156195985582111, guid: 399b6d140d37c9247b3afe0ad22e3472, type: 3}
       propertyPath: _randomValue._minValue
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4290603832446701626, guid: 399b6d140d37c9247b3afe0ad22e3472, type: 3}
       propertyPath: m_Icon
@@ -3082,7 +3082,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _godModeTime: 1
   _isGodMode: 0
-  _life: 10
+  _life: 6
 --- !u!61 &1876560270
 BoxCollider2D:
   m_ObjectHideFlags: 0
