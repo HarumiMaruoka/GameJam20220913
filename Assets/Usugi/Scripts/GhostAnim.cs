@@ -30,9 +30,7 @@ public class GhostAnim : MonoBehaviour
 
         DOTween.Sequence()
             .Append(thisImage.rectTransform.DOMove(_point1, _duration1)).SetRelative().SetEase(Ease.Linear)
-            .Append(thisImage.rectTransform.DOMove(_point2, _duration2)).SetRelative().SetEase(Ease.Linear)
-            .Append(thisImage.rectTransform.DOMove(_point3, _duration3)).SetRelative().SetEase(Ease.Linear)
-            .SetLoops(-1, LoopType.Restart);
+            .SetLoops(-1, LoopType.Yoyo);
         
     }
 
