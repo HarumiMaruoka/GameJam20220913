@@ -20,7 +20,7 @@ public class TextAnim : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _buttonText.DOColor(_afterFadeColor, _fadeTime).SetEase(Ease.InOutQuart).SetLoops(-1, LoopType.Yoyo);
+        _buttonText.DOColor(_afterFadeColor, _fadeTime).SetEase(Ease.InOutQuart).SetLoops(-1, LoopType.Yoyo).Kill();
     }
 
 }
