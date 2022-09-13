@@ -25,14 +25,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3668696569637273063}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.073834345, y: 0.12013575, z: 0.028973058}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!198 &3668696569637273061
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -223,7 +223,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0.6370897, g: 0, b: 1, a: 0.29803923}
+      maxColor: {r: 1, g: 0.9364519, b: 0, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -1050,8 +1050,8 @@ ParticleSystem:
           inWeight: 0.33333334
           outWeight: 0.33333334
         - serializedVersion: 3
-          time: 0.0718506
-          value: 0.40830976
+          time: 0.048451245
+          value: 0.31304914
           inSlope: 0.6415759
           outSlope: 0.6415759
           tangentMode: 0
@@ -1059,8 +1059,8 @@ ParticleSystem:
           inWeight: 0.33333334
           outWeight: 0.31126523
         - serializedVersion: 3
-          time: 0.22389865
-          value: 0
+          time: 0.15952182
+          value: 0.0041503906
           inSlope: -0.82403636
           outSlope: -0.82403636
           tangentMode: 0
@@ -1372,7 +1372,7 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 0.34090424, g: 0.3701531, b: 0.7169812, a: 0}
+        key0: {r: 1, g: 1, b: 1, a: 0}
         key1: {r: 0.94435024, g: 0.18431371, b: 1, a: 1}
         key2: {r: 1, g: 1, b: 1, a: 0}
         key3: {r: 0, g: 0, b: 0, a: 0}
@@ -1380,8 +1380,8 @@ ParticleSystem:
         key5: {r: 0, g: 0, b: 0, a: 0}
         key6: {r: 0, g: 0, b: 0, a: 0}
         key7: {r: 0, g: 0, b: 0, a: 0}
-        ctime0: 12336
-        ctime1: 64957
+        ctime0: 0
+        ctime1: 63800
         ctime2: 65535
         ctime3: 0
         ctime4: 0
