@@ -14,6 +14,8 @@ public class AttackTheEnemy : MonoBehaviour, IPointerClickHandler
     int _score = 10;
 
     /// <summary>
+    /// このメソッドはhierarchyにイベントシステムが必要。<br/>
+    /// かつ、カメラにPhisics 2D RayCast をアタッチする必要がある。<br/>
     /// オブジェクトをクリックしたらライフを減らし、ライフが 0 になったら破棄する。<br/>
     /// スコアを加算する。
     /// </summary>
